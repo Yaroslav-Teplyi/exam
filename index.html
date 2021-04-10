@@ -9,26 +9,25 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    
+
     <main class="main">
-        <header class="header">
+
+        <nav class="navbar sticky-top navbar navbar-light navbar-expand-lg justify-content-between">
             <div class="container">
-                <nav class="navbar sticky-top navbar navbar-light navbar-expand-lg">
-                      <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                          <a class="nav-link active" href="#">ABOUT</a>
-                          <a class="nav-link active" href="#">HOW TO</a>
-                          <a class="nav-link active" href="#">FAQS</a>
-                          <a class="nav-link btn btn-danger" href="#">CONTACT US</a>
-                        </div>
-                      </div>
-                  </nav>
+                <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active" href="#">ABOUT</a>
+                    <a class="nav-link active" href="#">HOW TO</a>
+                    <a class="nav-link active" href="#">FAQS</a>
+                    <a class="nav-link btn btn-danger" href="#">CONTACT US</a>
+                  </div>
+                </div>
             </div>       
-        </header>
+        </nav>  
 
         <div class="hero">
             <div class="container">
@@ -224,9 +223,45 @@
             </div>
         </section>
 
-        <footer class="footer">
+
+
+        <section class="action">
             <div class="container">
                 <div class="row">
+                    <div class="col-4 action__desc">
+                        <p class="action__text">
+                            We provide traffic management consultants so you get started quickly, contact us for a quote today!
+                        </p>
+                    </div>
+                    <div class="col-6 action__action">
+                        <form class="action__form" action="#" method="get">
+                            <label for="name" class="action__label">Name</label>
+                            <input class="action__input" type="text" name="name" placeholder="Your name">
+                            <label for="email" class="action__label">Email address</label>
+                            <input class="action__input" type="text" name="email" placeholder="Your email address">
+                            <button class="action__btn btn-arrow btn btn-danger" type="submit">GET STARTED</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <a href="#"><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                    <div class="col-auto">
+                        <ul class="action__menu col-auto">
+                            <li class="action__item"><a href="">ABOUT</a></li>
+                            <li class="action__item"><a href="">HOW TO</a></li>
+                            <li class="action__item"><a href="">FAQS</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row justify-content-between">
                     <div class="col-auto">
                         <p class="footer__copy">Copyright @ 2019</p>
                     </div>

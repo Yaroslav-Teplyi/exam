@@ -20,3 +20,9 @@ font-family: 'DM Serif Display', serif; */
 .accordion-button:not(.collapsed)::after {
     background-image: url(../images/-.svg);
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
