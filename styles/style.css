@@ -244,11 +244,83 @@ ul {
     box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
 }
 
+.clients {
+    padding-top: 177px;
+}
+
+.clients__title {
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    color: #EE4D47;
+    margin-bottom: 44px;
+}
+
+.clients__text {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 140%;
+    color: #402B2B;
+}
+
+.carousel__nav {
+    margin-bottom: 63px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next {
+    margin-left: 30px;
+}
+
+.clients__menu {
+    display: flex;
+}
+
+.clients__item {
+    padding: 60px 52px 40px 48px;
+    width: 400px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border-radius: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clients__client {
+    display: flex;
+    align-items: center;
+}
+
+.clients__client-text {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    color: #402B2B;
+    margin-bottom: 60px;
+}
+
+.clients__name {
+    margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    color: #402B2B;
+}
+
 .action {
     background-image: url(../images/action_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 830px;
+    margin-top: 160px;
 }
 
 .action__text {
@@ -394,6 +466,11 @@ ul {
     .apply__title {
         padding-top: 0;
     }
+
+    .action__form {
+        margin-right: 0;
+        margin: 0 0 20px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -422,11 +499,6 @@ ul {
         display: none;
     }
 
-    .action__form {
-        margin-right: 0;
-        margin: 0 0 20px;
-    }
-
     .action__nav {
         padding: 70px 0 50px;
     }
@@ -434,7 +506,12 @@ ul {
     .action__menu,
     .footer__social {
         margin-right: 0;
-}
+    }
+
+    .clients__item {
+        padding: 30px 26px 20px 24px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 767px) {
